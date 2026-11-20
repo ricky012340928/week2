@@ -1,0 +1,8 @@
+Based on the provided logs and notes, the REAL problems identified are:
+
+1. **Database Issues**: The database restarts nightly at 08:05, and this causes brief timeouts during the restart period. This is expected and not a real problem, as it is part of the normal maintenance schedule.
+   
+2. **Memory Leak in Report Worker**: The report worker has a known memory leak (ticket IT-142 is open), leading to an "out of memory" error at 08:07. This is a real problem that needs to be addressed.
+
+So, the summarization of the REAL problems is:
+- Memory leak in the report worker (issue IT-142) is causing out-of-memory errors.
